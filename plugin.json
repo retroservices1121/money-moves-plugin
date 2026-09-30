@@ -1,0 +1,47 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "money-moves",
+  "version": "0.2.0",
+  "description": "A skills-first personal finance workflow for daily briefs, spend-down tracking, and practical cash-flow decisions using financial context already available in ChatGPT.",
+  "author": {
+    "name": "Retro Services",
+    "url": "https://github.com/retroservices1121"
+  },
+  "repository": "https://github.com/retroservices1121/money-moves-plugin",
+  "homepage": "https://github.com/retroservices1121/money-moves-plugin",
+  "keywords": [
+    "personal-finance",
+    "cash-flow",
+    "budgeting",
+    "financial-brief"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Money Moves",
+        "shortDescription": "Turn your financial context into clear daily money decisions.",
+        "longDescription": "Money Moves uses financial context already available in ChatGPT plus your own limits and rules to produce morning briefs, evening change reports, category spend-down trackers, and practical next-step guidance.",
+        "developerName": "Retro Services",
+        "category": "Finance",
+        "capabilities": [
+          "Read"
+        ],
+        "defaultPrompt": [
+          "Give me my Money Moves brief.",
+          "Set up a morning brief and an evening changes-only brief.",
+          "Show my monthly spend-down trackers."
+        ],
+        "brandColor": "#0F172A",
+        "composerIcon": "./icon-512.svg",
+        "logo": "./icon-512.svg",
+        "websiteURL": "https://github.com/retroservices1121/money-moves-plugin",
+        "supportURL": "https://github.com/retroservices1121/money-moves-plugin/blob/main/SUPPORT.md",
+        "privacyPolicyURL": "https://github.com/retroservices1121/money-moves-plugin/blob/main/PRIVACY.md",
+        "termsOfServiceURL": "https://github.com/retroservices1121/money-moves-plugin/blob/main/TERMS.md"
+      },
+      "publication": {
+        "release_notes": "Initial skills-only Money Moves release with daily briefs, evening change summaries, monthly spend-down tracking, stale-data handling, and recurring-charge change detection."
+      }
+    }
+  }
+}
